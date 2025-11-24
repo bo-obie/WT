@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="register.html">Registration</a>
+      <a href="login.html">Login</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+      
+        <label for="username">Username:</label>
+        <input type="text" id="username" minlength="6" maxlength="15" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" minlength="6" maxlength="15" required>
+        <br><br>
+
+        <input type="submit" value="Login">
+        <input type="reset">
+
+    </form>
+    <br>
+    <p>Dont have an account? <a href="register.html">Register Here</a></p>
+  </main>
+  
+</body>
+</html>

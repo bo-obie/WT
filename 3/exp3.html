@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Form Validation</title>
+  <style>
+    body{
+      background-color: aqua;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+    }
+    h1{
+      text-align: center;
+      color: black;
+    }
+    .container{
+      color: blueviolet;
+      text-align: justify;
+      padding: 12px;
+      display: block;
+
+    }
+
+    .form-control{
+      display: flexbox;
+    }
+
+    button{
+      color: brown;
+      background-color: bisque;
+      box-shadow: 44cap;
+    }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <form id="form" class="form">
+      <h1>Register With Us</h1>
+      <div class="form-control">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <small>Error Message</small>
+      </div>    
+      <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <small>Error Message</small>
+      </div>    
+      <div class="form-control">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <small>error Message</small>
+      </div>    
+      <div class="form-control">
+        <label for="password2">Confirm Password</label>
+        <input type="password2" name="password2" id="password2">
+        <small>Error Message</small>
+      </div>  
+      <button type="submit">Submit</button>  
+    </form>
+  </div>
+
+  <script src="exp3.js"></script>
+</body>
+</html>

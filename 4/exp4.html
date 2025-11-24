@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery MasterClass</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h2 id="heading">Welcome to my Page</h2>
+  <div id="content">
+    <p>This is some <b>Original</b> content</p>
+  </div>
+
+  <input type="text" name="inputtext" id="inputtext" placeholder="Enter New Content Here">
+
+  <button id="Readme">Read</button>
+  <button id="Writeme">Write</button>
+
+  <p id="output"></p>
+
+  <script>
+    $(document).ready(function(){
+    
+      $("#Readme").click(function(){
+        let htmlData=$("#content").html();
+        let textData=$("#content").text();
+
+        $("#output").html("<b>HTML:</b>"+htmlData+"<b>Text:</b>"+ textData)
+      });
+
+      $("#Writeme").click(function(){
+
+        let newcontent= $("#inputtext").val();
+
+        $("#content").html(newcontent);
+
+        $("#output").html("<i>Content Updated</i>")
+
+      });
+
+
+    }
+  );
+  </script>
+</body>
+</html>
